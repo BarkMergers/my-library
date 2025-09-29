@@ -1,44 +1,13 @@
 {
-  "name": "@BarkMergers/my-library",
-  "version": "1.4.3",
-  "type": "module",
-  "main": "dist/my-library.umd.js", 
-  "module": "dist/my-library.es.js",
-  "types": "dist/index.d.ts",
-  "files": [ "dist" ],
-  "scripts": {
-    "dev": "vite --open",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "dist",
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true
   },
-
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-
-  "dependencies": {
-    "@tailwindcss/vite": "^4.1.13",
-    "daisyui": "^5.1.24",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "tailwindcss": "^4.1.13"
-  },
-
-  "devDependencies": {
-    "@eslint/js": "^9.36.0",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.0.3",
-    "eslint": "^9.36.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.4.0",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.44.0",
-    "vite": "npm:rolldown-vite@7.1.12"
-  },
-  "overrides": {
-    "vite": "npm:rolldown-vite@7.1.12"
-  }
+  "include": [ "src" ]
 }
