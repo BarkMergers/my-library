@@ -1,16 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <PropertyGroup>
-    <PackageJsonCompileroptionsDeclaration Condition="$(PackageJsonCompileroptionsDeclaration) == ''">true</PackageJsonCompileroptionsDeclaration>
-    <PackageJsonCompileroptionsDeclarationdir Condition="$(PackageJsonCompileroptionsDeclarationdir) == ''">dist</PackageJsonCompileroptionsDeclarationdir>
-    <PackageJsonCompileroptionsEmitdeclarationonly Condition="$(PackageJsonCompileroptionsEmitdeclarationonly) == ''">true</PackageJsonCompileroptionsEmitdeclarationonly>
-    <PackageJsonCompileroptionsOutdir Condition="$(PackageJsonCompileroptionsOutdir) == ''">dist</PackageJsonCompileroptionsOutdir>
-    <PackageJsonCompileroptionsModule Condition="$(PackageJsonCompileroptionsModule) == ''">ESNext</PackageJsonCompileroptionsModule>
-    <PackageJsonCompileroptionsTarget Condition="$(PackageJsonCompileroptionsTarget) == ''">ESNext</PackageJsonCompileroptionsTarget>
-    <PackageJsonCompileroptionsModuleresolution Condition="$(PackageJsonCompileroptionsModuleresolution) == ''">Node</PackageJsonCompileroptionsModuleresolution>
-    <PackageJsonCompileroptionsStrict Condition="$(PackageJsonCompileroptionsStrict) == ''">true</PackageJsonCompileroptionsStrict>
-    <PackageJsonInclude Condition="$(PackageJsonInclude) == ''">[
-  "src"
-]</PackageJsonInclude>
+    <PackageJsonName Condition="$(PackageJsonName) == ''">@BarkMergers/my-library</PackageJsonName>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">1.4.6</PackageJsonVersion>
+    <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
+    <PackageJsonMain Condition="$(PackageJsonMain) == ''">dist/my-library.umd.js</PackageJsonMain>
+    <PackageJsonModule Condition="$(PackageJsonModule) == ''">dist/my-library.es.js</PackageJsonModule>
+    <PackageJsonTypes Condition="$(PackageJsonTypes) == ''">dist/index.d.ts</PackageJsonTypes>
+    <PackageJsonFiles Condition="$(PackageJsonFiles) == ''">[
+  "dist"
+]</PackageJsonFiles>
+    <PackageJsonScriptsDev Condition="$(PackageJsonScriptsDev) == ''">vite --open</PackageJsonScriptsDev>
+    <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">tsc -b &amp;&amp; vite build</PackageJsonScriptsBuild>
+    <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint .</PackageJsonScriptsLint>
+    <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
+    <PackageJsonPublishconfigRegistry Condition="$(PackageJsonPublishconfigRegistry) == ''">https://npm.pkg.github.com/</PackageJsonPublishconfigRegistry>
+    <PackageJsonDependenciesTailwindcssVite Condition="$(PackageJsonDependenciesTailwindcssVite) == ''">^4.1.13</PackageJsonDependenciesTailwindcssVite>
+    <PackageJsonDependenciesDaisyui Condition="$(PackageJsonDependenciesDaisyui) == ''">^5.1.24</PackageJsonDependenciesDaisyui>
+    <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^19.1.1</PackageJsonDependenciesReact>
+    <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^19.1.1</PackageJsonDependenciesReactDom>
+    <PackageJsonDependenciesTailwindcss Condition="$(PackageJsonDependenciesTailwindcss) == ''">^4.1.13</PackageJsonDependenciesTailwindcss>
+    <PackageJsonDevdependenciesEslintJs Condition="$(PackageJsonDevdependenciesEslintJs) == ''">^9.36.0</PackageJsonDevdependenciesEslintJs>
+    <PackageJsonDevdependenciesTypesReact Condition="$(PackageJsonDevdependenciesTypesReact) == ''">^19.1.13</PackageJsonDevdependenciesTypesReact>
+    <PackageJsonDevdependenciesTypesReactDom Condition="$(PackageJsonDevdependenciesTypesReactDom) == ''">^19.1.9</PackageJsonDevdependenciesTypesReactDom>
+    <PackageJsonDevdependenciesVitejsPluginReact Condition="$(PackageJsonDevdependenciesVitejsPluginReact) == ''">^5.0.3</PackageJsonDevdependenciesVitejsPluginReact>
+    <PackageJsonDevdependenciesEslint Condition="$(PackageJsonDevdependenciesEslint) == ''">^9.36.0</PackageJsonDevdependenciesEslint>
+    <PackageJsonDevdependenciesEslintPluginReactHooks Condition="$(PackageJsonDevdependenciesEslintPluginReactHooks) == ''">^5.2.0</PackageJsonDevdependenciesEslintPluginReactHooks>
+    <PackageJsonDevdependenciesEslintPluginReactRefresh Condition="$(PackageJsonDevdependenciesEslintPluginReactRefresh) == ''">^0.4.20</PackageJsonDevdependenciesEslintPluginReactRefresh>
+    <PackageJsonDevdependenciesGlobals Condition="$(PackageJsonDevdependenciesGlobals) == ''">^16.4.0</PackageJsonDevdependenciesGlobals>
+    <PackageJsonDevdependenciesTypescript Condition="$(PackageJsonDevdependenciesTypescript) == ''">~5.8.3</PackageJsonDevdependenciesTypescript>
+    <PackageJsonDevdependenciesTypescriptEslint Condition="$(PackageJsonDevdependenciesTypescriptEslint) == ''">^8.44.0</PackageJsonDevdependenciesTypescriptEslint>
+    <PackageJsonDevdependenciesVite Condition="$(PackageJsonDevdependenciesVite) == ''">npm:rolldown-vite@7.1.12</PackageJsonDevdependenciesVite>
+    <PackageJsonOverridesVite Condition="$(PackageJsonOverridesVite) == ''">npm:rolldown-vite@7.1.12</PackageJsonOverridesVite>
   </PropertyGroup>
 </Project>
