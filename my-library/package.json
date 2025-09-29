@@ -1,6 +1,6 @@
 {
   "name": "@BarkMergers/my-library",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "type": "module",
   "main": "dist/my-library.umd.js",
   "module": "dist/my-library.es.js",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
-    "@types/react": "^19.1.13",
+    "@types/react": "^19.1.15",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.3",
     "eslint": "^9.36.0",
