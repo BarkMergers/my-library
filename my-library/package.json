@@ -1,6 +1,6 @@
 {
   "name": "@BarkMergers/my-library",
-  "version": "0.0.0",
+  "version": "1.3.5",
   "type": "module",
   "scripts": {
     "dev": "vite --open",
