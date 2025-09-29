@@ -11,21 +11,20 @@ export default defineConfig({
         dts()
     ],
     build: {
-    lib: {
-      entry: 'src/index.ts',
-      name: 'MyLibrary',
-      formats: ["es", "umd"],
-      fileName: (format) => `my-library.${format}.js`,
-    },
-    rollupOptions: {
-      external: ["react", "react-dom"],
-      output: {
-        globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
+        lib: {
+            entry: "./src/index.ts",
+            name: "MyLibrary",
+            formats: ["es", "umd"],
+            fileName: (format) => `my-library.${format}.js`,
         },
-      },
-    },
-  },
-})
-
+        rollupOptions: {
+            external: ["react", "react-dom"],
+            output: {
+                globals: {
+                    react: "React",
+                    "react-dom": "ReactDOM"
+                }
+            }
+        }
+    }
+});

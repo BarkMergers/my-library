@@ -2,7 +2,7 @@
 <Project>
   <PropertyGroup>
     <PackageJsonName Condition="$(PackageJsonName) == ''">@BarkMergers/my-library</PackageJsonName>
-    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">1.6.1</PackageJsonVersion>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">1.6.3</PackageJsonVersion>
     <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
     <PackageJsonMain Condition="$(PackageJsonMain) == ''">dist/my-library.umd.js</PackageJsonMain>
     <PackageJsonModule Condition="$(PackageJsonModule) == ''">dist/my-library.es.js</PackageJsonModule>
@@ -15,6 +15,8 @@
     <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint .</PackageJsonScriptsLint>
     <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
     <PackageJsonPublishconfigRegistry Condition="$(PackageJsonPublishconfigRegistry) == ''">https://npm.pkg.github.com/</PackageJsonPublishconfigRegistry>
+    <PackageJsonPeerdependenciesReact Condition="$(PackageJsonPeerdependenciesReact) == ''">&gt;=19.1.15</PackageJsonPeerdependenciesReact>
+    <PackageJsonPeerdependenciesReactDom Condition="$(PackageJsonPeerdependenciesReactDom) == ''">&gt;=19.1.9</PackageJsonPeerdependenciesReactDom>
     <PackageJsonDependenciesTailwindcssVite Condition="$(PackageJsonDependenciesTailwindcssVite) == ''">^4.1.13</PackageJsonDependenciesTailwindcssVite>
     <PackageJsonDependenciesDaisyui Condition="$(PackageJsonDependenciesDaisyui) == ''">^5.1.24</PackageJsonDependenciesDaisyui>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^19.1.1</PackageJsonDependenciesReact>
@@ -31,6 +33,7 @@
     <PackageJsonDevdependenciesTypescript Condition="$(PackageJsonDevdependenciesTypescript) == ''">~5.8.3</PackageJsonDevdependenciesTypescript>
     <PackageJsonDevdependenciesTypescriptEslint Condition="$(PackageJsonDevdependenciesTypescriptEslint) == ''">^8.44.0</PackageJsonDevdependenciesTypescriptEslint>
     <PackageJsonDevdependenciesVite Condition="$(PackageJsonDevdependenciesVite) == ''">npm:rolldown-vite@7.1.12</PackageJsonDevdependenciesVite>
+    <PackageJsonDevdependenciesVitePluginDts Condition="$(PackageJsonDevdependenciesVitePluginDts) == ''">^4.5.4</PackageJsonDevdependenciesVitePluginDts>
     <PackageJsonOverridesVite Condition="$(PackageJsonOverridesVite) == ''">npm:rolldown-vite@7.1.12</PackageJsonOverridesVite>
   </PropertyGroup>
 </Project>
