@@ -1,17 +1,5 @@
-import * as React from "react";
-import { ReactElement } from "react";
+import React from "react";
 
-
-
-export default function MyButton({ children }: { children: ReactElement }) {
-
-
-    return (
-
-        <div className="btn btn-primary">
-            {children}
-        </div>
-
-
-    );
+export function MyButton({ label }: { label: string }) {
+    return <button>{label}</button>;
 }
