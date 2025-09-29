@@ -1,22 +1,22 @@
 {
   "name": "@BarkMergers/my-library",
-  "version": "1.4.6",
+  "version": "1.5.0",
   "type": "module",
-  "main": "dist/my-library.umd.js", 
+  "main": "dist/my-library.umd.js",
   "module": "dist/my-library.es.js",
   "types": "dist/index.d.ts",
-  "files": [ "dist" ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite --open",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "daisyui": "^5.1.24",
@@ -24,7 +24,6 @@
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.13"
   },
-
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@types/react": "^19.1.13",
