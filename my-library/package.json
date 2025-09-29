@@ -1,6 +1,6 @@
 {
   "name": "@BarkMergers/my-library",
-  "version": "1.5.7",
+  "version": "1.5.75",
   "type": "module",
   "main": "dist/my-library.umd.js",
   "module": "dist/my-library.es.js",

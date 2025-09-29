@@ -2,7 +2,7 @@
 <Project>
   <PropertyGroup>
     <PackageJsonName Condition="$(PackageJsonName) == ''">@BarkMergers/my-library</PackageJsonName>
-    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">1.5.7</PackageJsonVersion>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">1.5.75</PackageJsonVersion>
     <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
     <PackageJsonMain Condition="$(PackageJsonMain) == ''">dist/my-library.umd.js</PackageJsonMain>
     <PackageJsonModule Condition="$(PackageJsonModule) == ''">dist/my-library.es.js</PackageJsonModule>
