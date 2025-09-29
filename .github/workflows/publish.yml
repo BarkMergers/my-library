@@ -16,7 +16,10 @@ jobs:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
       - run: npm install
+        working-directory: ./my-library   # 👈 point to where package.json is
       - run: npm run build
+        working-directory: ./my-library
       - run: npm publish
+        working-directory: ./my-library
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
