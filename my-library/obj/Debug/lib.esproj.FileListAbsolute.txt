@@ -1,0 +1,1 @@
+C:\github\vite\lib\lib\obj\Debug\lib.esproj.CoreCompileInputs.cache
