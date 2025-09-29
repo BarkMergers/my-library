@@ -1,6 +1,6 @@
 {
   "name": "@BarkMergers/my-library",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "type": "module",
   "main": "dist/my-library.umd.js",
   "module": "dist/my-library.es.js",
@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "vite --open",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
