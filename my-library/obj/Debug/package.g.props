@@ -4,6 +4,12 @@
     <PackageJsonName Condition="$(PackageJsonName) == ''">@BarkMergers/my-library</PackageJsonName>
     <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">1.3.9</PackageJsonVersion>
     <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
+    <PackageJsonMain Condition="$(PackageJsonMain) == ''">dist/my-library.umd.js</PackageJsonMain>
+    <PackageJsonModule Condition="$(PackageJsonModule) == ''">dist/my-library.es.js</PackageJsonModule>
+    <PackageJsonTypes Condition="$(PackageJsonTypes) == ''">dist/index.d.ts</PackageJsonTypes>
+    <PackageJsonFiles Condition="$(PackageJsonFiles) == ''">[
+  "dist"
+]</PackageJsonFiles>
     <PackageJsonScriptsDev Condition="$(PackageJsonScriptsDev) == ''">vite --open</PackageJsonScriptsDev>
     <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">tsc -b &amp;&amp; vite build</PackageJsonScriptsBuild>
     <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint .</PackageJsonScriptsLint>

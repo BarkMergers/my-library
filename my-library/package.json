@@ -2,13 +2,10 @@
   "name": "@BarkMergers/my-library",
   "version": "1.3.9",
   "type": "module",
-
-  "main": "dist/my-library.umd.js", // CommonJS
-  "module": "dist/my-library.es.js", // ES module
-  "types": "dist/index.d.ts", // TypeScript types
+  "main": "dist/my-library.umd.js", 
+  "module": "dist/my-library.es.js",
+  "types": "dist/index.d.ts",
   "files": [ "dist" ],
-
-
   "scripts": {
     "dev": "vite --open",
     "build": "tsc -b && vite build",
